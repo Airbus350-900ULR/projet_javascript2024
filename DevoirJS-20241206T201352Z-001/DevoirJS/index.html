@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Analyse des Revenus - Chart.js</title>
+    <!-- Inclure le fichier CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Inclure Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <h1>Analyse des Revenus et des Technologies Utilisées</h1>
+
+    <!-- Section pour le Focus sur le revenu moyen en fonction de l’expérience professionnelle -->
+    <section id="focus-experience">
+        <h2>Focus sur le revenu moyen en fonction de l’expérience professionnelle</h2>
+
+        <!-- Sélecteurs spécifiques à cette section -->
+        <div class="selectors">
+            <!-- Sélection du continent -->
+            <label for="continent-experience">Choisissez un continent :</label>
+            <select id="continent-experience">
+                <option value="all">Tous les continents</option>
+                <option value="europe">Europe</option>
+                <option value="north america">Amérique du Nord</option>
+                <!-- Ajoutez d'autres continents si nécessaire -->
+            </select><br>
+
+            <!-- Sélection du pays -->
+            <label for="country-experience">Choisissez un pays :</label>
+            <select id="country-experience">
+                <!-- Les options seront remplies dynamiquement -->
+            </select>
+        </div><br>
+
+        <!-- Graphiques spécifiques à cette section -->
+        <h3>Revenu moyen en fonction de l'expérience professionnelle</h3>
+        <canvas id="experienceChart" width="800" height="400"></canvas>
+
+        <h3>Revenu moyen en fonction du niveau d'études</h3>
+        <canvas id="educationChart" width="800" height="400"></canvas>
+    </section>
+
+    <!-- Section pour le Focus sur le revenu moyen en fonction des compétences techniques -->
+    <section id="focus-competences">
+        <h2>Focus sur le revenu moyen en fonction des compétences techniques</h2>
+
+        <!-- Sélecteurs spécifiques à cette section -->
+        <div class="selectors">
+            <!-- Sélection du continent -->
+            <label for="continent-competences">Choisissez un continent :</label>
+            <select id="continent-competences">
+                <option value="all">Tous les continents</option>
+                <option value="europe">Europe</option>
+                <option value="north america">Amérique du Nord</option>
+            </select><br>
+
+            <!-- Sélection du pays -->
+            <label for="country-competences">Choisissez un pays :</label>
+            <select id="country-competences">
+                <!-- Les options seront remplies dynamiquement -->
+            </select><br>
+
+            <!-- Sélection de l'expérience -->
+            <label for="experience-competences">Choisissez le nombre d'années d'expérience :</label>
+            <select id="experience-competences">
+                <option value="all">Toutes les expériences</option>
+                <option value="0-5">0-5 ans</option>
+                <option value="6-10">6-10 ans</option>
+                <option value="11-15">11-15 ans</option>
+                <option value="16-20">16-20 ans</option>
+                <option value="21+">Plus de 21 ans</option>
+            </select>
+        </div>
+
+        <!-- Graphiques spécifiques à cette section -->
+        <h3>Revenu moyen par plateformes de cloud</h3>
+        <canvas id="cloudPlatformChart" width="800" height="400"></canvas>
+
+        <h3>Revenu moyen par frameworks de développement web</h3>
+        <canvas id="webFrameworkChart" width="800" height="400"></canvas>
+    </section>
+
+    <!-- Section pour le Focus sur les technologies les plus utilisées -->
+    <section id="focus-technologies">
+        <h2>Focus sur les technologies les plus utilisées</h2>
+
+        <!-- Sélecteurs spécifiques à cette section -->
+        <div class="selectors">
+            <!-- Sélection du continent -->
+            <label for="continent-technologies">Choisissez un continent :</label>
+            <select id="continent-technologies">
+                <option value="all">Tous les continents</option>
+                <option value="europe">Europe</option>
+                <option value="north america">Amérique du Nord</option>
+            </select><br>
+
+            <!-- Sélection du métier -->
+            <label for="devType-technologies">Choisissez un métier :</label>
+            <select id="devType-technologies">
+                <!-- Les options seront remplies dynamiquement -->
+            </select><br>
+
+            <!-- Sélection du top N -->
+            <label for="topN-technologies">Nombre de résultats à afficher :</label>
+            <select id="topN-technologies">
+                <option value="5">Top 5</option>
+                <option value="6">Top 6</option>
+                <option value="7">Top 7</option>
+                <option value="8">Top 8</option>
+            </select>
+        </div>
+
+        <!-- Graphiques spécifiques à cette section -->
+        <h3>Top N des systèmes d'exploitation utilisés</h3>
+        <canvas id="osChart" width="800" height="400"></canvas>
+
+        <h3>Top N des outils de communication utilisés</h3>
+        <canvas id="communicationToolsChart" width="800" height="400"></canvas>
+    </section>
+
+    <!-- Inclure les scripts JavaScript -->
+    <script src="js/chart.js"></script>
+    <script src="js/data-utils.js"></script>
+</body>
+</html>
