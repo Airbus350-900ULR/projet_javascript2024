@@ -1,32 +1,80 @@
-/* css/style.css */
-
-/* Styles généraux */
+/* Général */
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
+    background-color: #f9f9f9;
+    color: #333;
 }
 
 h1, h2 {
-    color: #333;
+    color: #222;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 label {
     margin-right: 10px;
+    font-weight: bold;
 }
 
 select {
     margin-right: 20px;
     padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #fff;
 }
 
 section {
     margin-bottom: 50px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+/* Centrer les sélecteurs */
 .selectors {
     margin-bottom: 20px;
+    text-align: center;
 }
 
+/* Graphiques */
 canvas {
-    margin-bottom: 40px;
+    display: block;
+    margin: 0 auto 40px auto; /* Centré et espacé */
+    max-width: 90%; /* Limiter la largeur */
+    max-height: 400px; /* Limiter la hauteur */
+    border: 1px solid #ddd; /* Ajout d'une bordure pour encadrer */
+    border-radius: 10px; /* Bords arrondis */
+    background-color: #fafafa; /* Fond clair */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
+
+/* Boutons ou autres éléments */
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Adaptation pour mobile */
+@media (max-width: 768px) {
+    canvas {
+        max-width: 100%;
+        max-height: 300px;
+    }
+
+    section {
+        padding: 10px;
+    }
 }
